@@ -383,6 +383,12 @@ font: normal normal normal 80px/1.2em 'noticia text',serif;
 color: #4D4D4D;
 }
 
+.titr-project{
+    margin-top: 20px;
+    font: normal normal normal 80px/1.2em 'noticia text',serif;
+    color: #4D4D4D;
+    }
+
 .titr-contact{
     
     font: normal normal normal 80px/1.2em 'noticia text',serif;
@@ -646,7 +652,11 @@ color: #4D4D4D;
         color: #4D4D4D;
         }
 
-
+  .titr-project{
+            
+            font: normal normal normal 30px 'noticia text',serif;
+            color: #4D4D4D;
+            }
     
 
              // resume mobile
@@ -678,7 +688,7 @@ color: #4D4D4D;
     .header-resume{
         display: flex;
         align-items: flex-end;
-        //justify-content: space-between
+        justify-content: space-between
         
     }
     .margin-flex2{
@@ -765,9 +775,14 @@ color: #4D4D4D;
                 flex-direction: column;
                 justify-content: flex-end;
                 
-             }       
+             }  
+             
+    .text-mobile{
+        width: 30%;
+    }
+    
             
-        
+             
    
 }
 

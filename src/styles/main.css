@@ -10215,6 +10215,12 @@ a:hover {
   color: #4D4D4D;
 }
 
+.titr-project {
+  margin-top: 20px;
+  font: normal normal normal 80px/1.2em "noticia text", serif;
+  color: #4D4D4D;
+}
+
 .titr-contact {
   font: normal normal normal 80px/1.2em "noticia text", serif;
   color: #4D4D4D;
@@ -10461,6 +10467,11 @@ a:hover {
     color: #4D4D4D;
   }
 
+  .titr-project {
+    font: normal normal normal 30px "noticia text", serif;
+    color: #4D4D4D;
+  }
+
   .container-grid {
     display: grid;
     grid-template-rows: auto auto auto auto;
@@ -10482,6 +10493,7 @@ a:hover {
   .header-resume {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
   }
 
   .margin-flex2 {
@@ -10557,6 +10569,10 @@ a:hover {
     height: 100px;
     flex-direction: column;
     justify-content: flex-end;
+  }
+
+  .text-mobile {
+    width: 30%;
   }
 }
 /* für Tablet */
