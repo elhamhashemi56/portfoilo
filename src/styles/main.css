@@ -10571,8 +10571,8 @@ a:hover {
     justify-content: flex-end;
   }
 
-  .text-mobile {
-    width: 30%;
+  .row {
+    max-width: 100vw;
   }
 }
 /* für Tablet */
