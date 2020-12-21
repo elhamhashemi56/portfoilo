@@ -10186,9 +10186,16 @@ a:hover {
   grid-template-areas: ". header-resume ." ". main-resume ." "fus fus fus " ". . .";
 }
 
-.container-grid {
+.container-grid-projects {
   display: grid;
-  grid-template-rows: 1fr 1fr 8fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 15fr;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-areas: ". header-resume ." ". titr-resume ." ". main-resume ." "fus fus fus " ". . .";
+}
+
+.container-grid-resume {
+  display: grid;
+  grid-template-rows: 1fr 1fr 8fr;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-areas: ". header-resume ." ". titr-resume ." ". main-resume ." "fus fus fus " ". . .";
 }
