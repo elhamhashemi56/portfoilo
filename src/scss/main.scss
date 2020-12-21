@@ -523,6 +523,9 @@ color: #4D4D4D;
     color: white;
 }
 
+::placeholder{
+    color: white;
+}
 
 /* für Mobile */
 @media screen and (max-width: 635px){
