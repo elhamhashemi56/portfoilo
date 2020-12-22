@@ -10700,5 +10700,10 @@ a:hover {
     grid-template-areas: ". header-resume ." ". main-resume ." "fus fus fus ";
   }
 }
+.clickon {
+  height: 200px;
+  width: 400px;
+  background-color: #4d4d4d;
+}
 
 /*# sourceMappingURL=main.css.map */
