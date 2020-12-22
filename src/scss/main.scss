@@ -548,20 +548,31 @@ color: #4D4D4D;
 
     .container2{
         display: grid;
-        grid-template-rows:   auto auto auto auto;
-        grid-template-columns: auto auto;
+        grid-template-rows: repeat(4,auto);
+        grid-template-columns: auto 100px;
         grid-template-areas: 
        
         "titr hamburger"
+        "menubar menubar"
         "pic pic"
         "main main"
         "fus fus"
         ;
     }
 
+    #menu {
+        grid-area: menubar;
+    }
     
+    #ham.clickon + #menu {
+        display: block;
+        background-color: #575454;
+        border-radius: 10px;
 
-    #hamburger{
+    }
+
+
+    #ham{
         grid-area: hamburger;
     }
     .hamburger{
@@ -952,9 +963,10 @@ color: #4D4D4D;
     }
 }
 
-
+/*
 .clickon{
     height: 50rem;
     width: 700px;
     background-color: #4d4d4d;
-}
+}*/
+

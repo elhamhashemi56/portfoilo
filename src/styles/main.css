@@ -10367,12 +10367,22 @@ a:hover {
 @media screen and (max-width: 635px) {
   .container2 {
     display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: auto auto;
-    grid-template-areas: "titr hamburger" "pic pic" "main main" "fus fus";
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: auto 100px;
+    grid-template-areas: "titr hamburger" "menubar menubar" "pic pic" "main main" "fus fus";
   }
 
-  #hamburger {
+  #menu {
+    grid-area: menubar;
+  }
+
+  #ham.clickon + #menu {
+    display: block;
+    background-color: #575454;
+    border-radius: 10px;
+  }
+
+  #ham {
     grid-area: hamburger;
   }
 
@@ -10700,10 +10710,11 @@ a:hover {
     grid-template-areas: ". header-resume ." ". main-resume ." "fus fus fus ";
   }
 }
-.clickon {
-  height: 50rem;
-  width: 700px;
-  background-color: #4d4d4d;
-}
+/*
+.clickon{
+    height: 50rem;
+    width: 700px;
+    background-color: #4d4d4d;
+}*/
 
 /*# sourceMappingURL=main.css.map */
