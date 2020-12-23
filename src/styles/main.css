@@ -9930,10 +9930,6 @@ h3 {
   grid-area: fus;
 }
 
-.items {
-  /* border: 1px solid green; */
-}
-
 body {
   background-color: #eae5e5;
 }
@@ -10363,7 +10359,7 @@ a:hover {
   color: white;
 }
 
-/* für Mobile */
+/******************** für Mobile *******************/
 @media screen and (max-width: 635px) {
   .container2 {
     display: grid;
@@ -10493,11 +10489,25 @@ a:hover {
     color: #4D4D4D;
   }
 
-  .container-grid {
+  .container-grid-resume {
     display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: auto;
-    grid-template-areas: "header-resume" "titr-resume" "main-resume" "fus";
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: auto 100px;
+    grid-template-areas: "header-resume" "menubar" "titr-resume" "main-resume" "fus";
+  }
+
+  #menu {
+    grid-area: menubar;
+  }
+
+  #ham.clickon + #menu {
+    display: block;
+    background-color: #575454;
+    border-radius: 10px;
+  }
+
+  #ham {
+    grid-area: hamburger;
   }
 
   .main-resume-container {
@@ -10576,8 +10586,8 @@ a:hover {
   .container-contact {
     display: grid;
     grid-template-rows: auto auto auto;
-    grid-template-columns: auto;
-    grid-template-areas: ". header-resume ." ". main-resume ." "fus fus fus ";
+    grid-template-columns: auto 100px;
+    grid-template-areas: ". header-resume ." ". menubar ." ". main-resume ." "fus fus fus ";
   }
 
   .titr-contact {
